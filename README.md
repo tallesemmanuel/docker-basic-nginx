@@ -7,7 +7,7 @@ Documentação Docker: https://docs.docker.com/
 Faça o Download do projeto para criar sua própria imagem docker e fazer o push para seu HubDocker.
 
 ```bash
-git clone https://github.com/tallesemmanuel/Docker_Basic_Nginx.git
+git clone https://github.com/tallesemmanuel/docker-basic-nginx.git
 ```
 
 Para criar sua imagem e fazer o push para seu HubDocker, altere no Dockerfile o "LABEL", caso queira e no arquivo docker-compose.yaml, altere a imagem, quando for de fato, iniciar o seu container.
