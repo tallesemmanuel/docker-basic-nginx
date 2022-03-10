@@ -15,7 +15,7 @@ Para criar sua imagem e fazer o push para seu HubDocker, altere no Dockerfile o 
 Para realizar o build da nova imagem.
 
 ```bash
-docker build -t <seurepo>/nginx:tag .
+docker build -t <account-name>/nginx:tag .
 ```
 
 Verifique sua imagem criada.
