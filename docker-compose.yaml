@@ -1,0 +1,7 @@
+version: '3'
+services:
+  nginx:
+    image: tallesalencar/nginx:1.0
+    container_name: nginx
+    ports:
+      - "82:80"
