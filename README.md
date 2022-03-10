@@ -1,5 +1,7 @@
 # Exemplo Docker Nginx
 
+Documentação Docker: https://docs.docker.com/
+
 ## Como realizar todo procedimento
 
 Faça o Download do projeto para criar sua própria imagem docker e fazer o push para seu HubDocker.
