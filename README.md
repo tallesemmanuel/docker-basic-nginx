@@ -1,50 +1,50 @@
-# Exemplo Docker Nginx
+# Docker nginx example
 
-Documentação Docker: https://docs.docker.com/
+Docker Documentation: https://docs.docker.com/
 
-## Como realizar todo procedimento
+## How to perform all procedure
 
-Faça o Download do projeto para criar sua própria imagem docker e fazer o push para seu HubDocker.
+Download the project to build your own docker image and push it to your HubDocker.
 
 ```bash
 git clone https://github.com/tallesemmanuel/docker-basic-nginx.git
 ```
 
-Para criar sua imagem e fazer o push para seu HubDocker, altere no Dockerfile o "LABEL", caso queira e no arquivo docker-compose.yaml, altere a imagem, quando for de fato, iniciar o seu container.
+To create your image and push it to your HubDocker, change the "LABEL" in the Dockerfile, if you want, and in the docker-compose.yaml file, change the image, when it actually starts your container.
 
-Para realizar o build da nova imagem.
+To build the new image.
 
 ```bash
 docker build -t <account-name>/nginx:tag .
 ```
 
-Verifique sua imagem criada.
+Check your created image.
 
 ```bash
 docker image ls
 ```
 
-Agora que sua imagem foi criada, execute o comando para que o container esteja em execução.
-Utilizamos o docker-compose interativo.
+Now that your image has been created, run the command so that the container is running.
+We use interactive docker-compose.
 
 ```bash
 docker-compose up
 ```
 
-Para executar o container em modo daemon, ou background.
+To run the container in daemon or background mode.
 
 ```bash
 docker-compose up -d
 ```
 
-Valide no seu navegador
+Validate in your browser
 
 ```bash
 localhost:82
 ```
 
-Agora que tudo está validado, realize o pull da sua imagem para o seu HubDocker. 
-Realize o login para o download da imagem criada.
+Now that everything is validated, pull your image to your HubDocker. 
+Log in to download the created image.
 
 ```bash
 docker login
@@ -54,8 +54,9 @@ docker login
 docker pull <seurepo>/nginx:tag
 ```
 
-Você pode moficiar a estrutura do conf e o html, no app.
-Também pode ser modificado direto no compose, portas e etc.
 
-Bom estudo!
+You can modify the conf structure and the html, in the app.
+It can also be modified directly in compose, ports and etc.
+
+Good study!
 
