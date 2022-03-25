@@ -1,12 +1,12 @@
 ### Imagem base
 FROM nginx:latest
 
-### Autor
+### Author
 LABEL Talles Alencar <tallesemmanuelspfc@gmail.com> 
 
-### Copiando arquivos para funcionamento do Nginx
+### Copying files for Nginx to work
 COPY conf/nginx.conf /etc/nginx/nginx.conf
 COPY app /usr/share/nginx/html
 
-### Expondo a porta padrão HTTP
+### Exposing the default HTTP port
 EXPOSE 80
